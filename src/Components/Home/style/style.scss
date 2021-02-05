@@ -1,0 +1,239 @@
+@import '../../../style/colors';
+@mixin absolute {
+  top: 0;
+  left: 0%;
+  right: 0;
+  bottom: 0; 
+  position: absolute;
+}
+@mixin grid{
+  display: grid;
+  grid-gap: 4rem;
+  align-content: center;
+  justify-content: center;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14rem 0rem 15rem 0rem;
+  .content{
+    text-align: left;
+
+    .title{
+      display: flex;
+      font-size: 10rem;
+      line-height: 9rem;
+      letter-spacing: -0.2rem;
+      font-weight: $weight900;
+      text-transform: uppercase;
+      flex-direction: column !important;
+      }
+
+    }
+    .description{
+      padding-right:3.2rem;
+      margin: 2rem 0rem 3rem 0rem;
+    }
+    .btngit{
+     
+  color: $black;
+  transition: 650ms;
+  border-radius: 0.2rem;
+  border: solid 0.2rem currentColor;
+  &:hover{
+    color: $white;
+    border-color:$black;
+    background-color: $black;
+  }
+    }
+  }
+  .stacks{
+    z-index: 1;
+    padding:120px 0px;
+    position: relative;
+    background-color: $black; 
+    &::before{
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      opacity: .3;
+      width: 100%;
+      content: "";
+      height: 100%;
+      position: absolute;
+      background: url("../../../assets/backgroundestrela.png") no-repeat center;
+      background-attachment: fixed;
+    }
+  .grid-columns{
+    z-index: 30;
+    @include grid();
+    margin-top: 120px;
+    grid-column-gap: 5rem;
+    grid-template-columns: repeat(3,1fr);
+    >.cols{
+      cursor: pointer;
+      background: $white;
+      text-align: center;
+      padding: 3.2rem 2rem;
+      border-radius: 0.8rem;
+      transition: 0.5s ease-in-out;
+      &:hover{
+        background-color: $black;
+        box-shadow: 0.7rem 0.6rem 1rem rgba(0,0,0,.2);
+  
+        .title{
+          color: $white;
+        }
+        .descriptioncols{
+          color: rgba(255,255,255,.6);
+        }
+      }
+      .descriptioncols{
+        color:$gray;
+        margin-top: 2rem;   
+        text-align: left;     
+        line-height: 2rem;
+      }
+    }
+    .cols{
+      .title{
+        font-size:1.7rem;
+        text-align: center;
+        letter-spacing: 0.2rem;
+        font-weight: $weight700;
+       
+      }
+      >.imgcols{
+       width:10rem;
+       text-align: center;
+       margin: 2.8rem auto;
+
+      }
+    }
+  }
+}
+
+.skill{
+  padding:12rem 0rem;
+
+  .headersections{
+    color: $black;
+    margin-bottom: 7rem;
+    
+    .description{
+      color: $gray;
+    }
+
+  }
+  .listworks{
+    @include grid();
+    grid-template-columns: repeat(2,1fr);
+
+    .listitem{
+      display: flex;
+      padding: 1.6rem;
+      border-radius: 1rem;
+      align-items: center;
+      box-shadow: 0.5rem 0.4rem 0.6rem rgba(0,0,0,.03);
+      img{
+        width: 13rem;
+        margin-right: 3rem;
+      }
+    }
+    
+    .listitem{
+      
+      .title{
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: $weight700;
+        text-transform:uppercase;
+    }
+  }
+  
+  >.listitem:nth-child(3){
+    
+    box-shadow: none;
+    grid-column: span 2;
+    align-items: center;
+    padding: 8rem 1.6rem;
+    justify-content:center;
+    
+  } 
+  
+    
+}
+}
+.works{
+  padding: 10rem 0rem;
+  background-color: $black;
+  .listworks{
+    @include grid();
+    margin-top: 6rem;
+    grid-gap: 3rem  2rem;
+    grid-template-columns:repeat(3,1fr);
+    
+   .workitem{
+     overflow: hidden;
+     position: relative;
+    .hovertext{
+      
+      width: 100%;
+      height: 100%;
+      display: flex;
+      cursor: pointer;
+      text-align: center;
+      @include absolute();
+      align-items: center;
+      padding: 0rem 1.6rem;
+      flex-direction: column;
+      justify-content: center;
+      transform: translateX(0);  
+      transition: 650ms ease-in-out;
+      background-color: $black;
+      &:hover{
+        
+        transform: translateX(100%);
+        transition: 650ms ease-in-out;
+        transform-origin: right bottom;
+
+      }
+      .title{
+        color:$white;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        font-weight: $weight900;
+        text-transform: capitalize;
+      }
+      .description{
+        color: rgba(255,255,255,.8);
+      }
+    }
+   }
+    .workitem:nth-child(1){
+      grid-column: span 2;
+   
+    }
+    
+    .workitem:nth-child(3){
+      grid-column: span 3;
+    }
+    .workitem:nth-child(4){
+    .hovertext{
+      transform: translateX(-0);
+      
+      &:hover{
+        transform: none;
+        transform: translateX(-100%);
+      }
+    }
+    }
+    
+    
+  }
+}

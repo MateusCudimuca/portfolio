@@ -1,0 +1,19 @@
+.herocontact {
+  padding: 14rem 15rem 15rem 0rem;
+}
+
+.herocontact .title {
+  font-size: 10rem;
+  font-weight: 900;
+  line-height: 9rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  letter-spacing: -0.2rem;
+}
+/*# sourceMappingURL=style.css.map */

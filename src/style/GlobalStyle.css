@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background: url("../assets/noise.png") repeat;
+  color: #2f3136;
+}
+
+body, input, button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input, button {
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 32px;
+  max-width: 900px;
+}
+
+.headersections {
+  color: #fafafa;
+  text-align: left;
+}
+
+.headersections .title {
+  font-size: 5.1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.headersections .description {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.description {
+  color: #666;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  font-weight: 300;
+  margin: 1.2rem 0px 2rem 0px;
+}
+
+.btn {
+  padding: 1.2rem 4.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  color: #333333;
+  border: solid 0.2rem currentColor;
+  border-radius: 0.2rem;
+  -webkit-transition: 650ms;
+  transition: 650ms;
+}
+
+.btn:hover {
+  color: #fafafa;
+  background-color: #333333;
+  border-color: #333333;
+}
+/*# sourceMappingURL=GlobalStyle.css.map */
