@@ -127,7 +127,7 @@ function Home() {
     
   <div className="container">
     <header className="headersections">
-        <h2 className="title">out last works</h2>
+        <h2 className="title">MY projects</h2>
         <p className="description">dolor sit amet consectetur adipisicing.</p>
       </header>
       <ul className="listworks">
@@ -135,7 +135,7 @@ function Home() {
         <img src={home} alt="" srcset=""/>
           <span className="hovertext">
             <h2 className="title">
-              hover me 01
+              01
             </h2>
             <p className="description">
               Lorem ipsum dolor sit amet consectetur, <br/> adipisicing elit. Repellat, beatae.
@@ -146,7 +146,7 @@ function Home() {
           <img src={mobile} alt="" srcset=""/>
           <span className="hovertext">
             <h2 className="title">
-              hover me 02
+                02
             </h2>
             <p className="description">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, beatae.
@@ -157,7 +157,7 @@ function Home() {
         <img src={home} alt="" srcset=""/>
           <span className="hovertext">
             <h2 className="title">
-              hover me 03
+                03
             </h2>
             <p className="description">
               Lorem ipsum dolor sit amet consectetur, <br/> adipisicing elit. Repellat, beatae.
@@ -168,7 +168,7 @@ function Home() {
         <img src={border} alt="" srcset=""/>
           <span className="hovertext">
             <h2 className="title">
-              hover me 04
+                04
             </h2>
             <p className="description">
               Lorem ipsum dolor sit amet consectetur,elit. Repellat, beatae.
@@ -179,7 +179,7 @@ function Home() {
         <img src={squares} alt="" srcset=""/>
           <span className="hovertext">
             <h2 className="title">
-              hover me 05
+                05
             </h2>
             <p className="description">
             amet consectetur, adipisicing elit. Repellat, beatae.
@@ -190,7 +190,7 @@ function Home() {
         <img src={squars} alt="" srcset=""/>
           <span className="hovertext">
             <h2 className="title">
-              hover me 06
+                06
             </h2>
             <p className="description">
             amet consectetur, adipisicing elit. Repellat, beatae.
