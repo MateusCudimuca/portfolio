@@ -15,6 +15,13 @@
   padding: 14rem 0rem 15rem 0rem;
 }
 
+.hero .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
+}
+
 .hero .content {
   text-align: left;
 }

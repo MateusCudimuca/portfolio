@@ -18,8 +18,15 @@
   flex-direction: column;
   justify-content: center;
   padding: 14rem 0rem 15rem 0rem;
+  .container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    
+  
+  }
   .content{
     text-align: left;
+
 
     .title{
       display: flex;

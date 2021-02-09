@@ -1,7 +1,6 @@
 import React from 'react';
 import "./style/style.css";
 import Header from "../Header";
-import Footer from "../Footer";
 import designer from"../../assets/pointer.svg";
 import visionario from"../../assets/visionario.svg";
 import lancamento from"../../assets/lancamento.svg";
@@ -15,6 +14,7 @@ import skillcss from"../../assets/css.png";
 import skilljs from"../../assets/js.png";
 import skillreact from"../../assets/react.png";
 import skillsass from"../../assets/sass.png";
+import block from"../../assets/blocks.png";
 
 function Home() {
   return(
@@ -32,6 +32,7 @@ function Home() {
           </p>
           <a href="/" className="btn btngit">download cv </a>
         </div>
+     <img src={block} alt=""/>
       </div>
   </section>
     <section className="stacks">
@@ -201,8 +202,6 @@ function Home() {
       </ul>
 </div>
   </section>
-  
-   <Footer/>
    </>
   )
 }
